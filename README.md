@@ -23,3 +23,14 @@ Learned:
 - `git log --oneline` — compact history; `HEAD -> main` means "you are here"
 - `.gitignore` — patterns git refuses to track, most importantly `.env*` for secrets
 - `git rm --cached` — stop tracking a file without deleting it from disk
+
+
+## 2026-09-03 — Day 3
+
+Deployed jobtrail to Vercel. Every push to main now auto-deploys.
+
+Learned:
+- Vercel needs its GitHub app installed to see your repos
+- `npm run dev` — local dev server on localhost:3000
+- `page.tsx` — Next.js renders whatever it exports as `default`
+- JSX uses `className`, not `class`
