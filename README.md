@@ -34,3 +34,17 @@ Learned:
 - `npm run dev` — local dev server on localhost:3000
 - `page.tsx` — Next.js renders whatever it exports as `default`
 - JSX uses `className`, not `class`
+
+
+
+## 2026-09-04 — Day 4
+
+Connected jobtrail to Postgres (Neon). Homepage now reads live data.
+
+Learned:
+- `.env.local` holds secrets locally; production env vars live in Vercel separately
+- SQL: `create table`, `uuid primary key`, `not null`, defaults, `timestamptz`
+- A `.sql` file is just text — something has to run it
+- Server Components can `await` a query directly, no API route needed
+- `git add` ≠ commit — push sends commits, not staged changes
+- Read the error message: "Connection string: DATABASE_URL" told us the value was wrong, not missing
