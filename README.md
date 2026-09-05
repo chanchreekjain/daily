@@ -48,3 +48,19 @@ Learned:
 - Server Components can `await` a query directly, no API route needed
 - `git add` ≠ commit — push sends commits, not staged changes
 - Read the error message: "Connection string: DATABASE_URL" told us the value was wrong, not missing
+
+
+
+## 2026-09-05 — Day 5
+
+Built UI Dissect from scratch — a Chrome extension that extracts and isolates modern UI styling on hover — and submitted it to the Microsoft Edge Add-ons store.
+
+Learned:
+- `e.composedPath()` vs `elementFromPoint` — `elementFromPoint` gets blocked by extension overlays; `e.composedPath()` pierces open Shadow Roots to find the real element under the cursor
+- Event lifecycles in async frames — reading event properties inside `requestAnimationFrame` returns empty arrays because the browser dispatches and clears the `MouseEvent` synchronously
+- Event capture (`useCapture: true`) — listening on the capture phase catches keystrokes (like `Space` to freeze) before complex sites like GitHub can intercept and consume them
+- Self-isolation in Shadow DOM — hosting extension UI in an isolated ShadowRoot with `pointer-events: none` prevents the inspector from inspecting its own highlight box
+- The computed styles trap — `window.getComputedStyle` dumps 300+ default properties and returns empty strings for shorthands; extracting the visual "DNA" requires targeted filtering
+- Git tracking vs `.gitignore` — adding files to `.gitignore` after they are committed does nothing; you have to run `git rm -r --cached` to purge them from the remote index
+- Extension packaging — store submission zips require `manifest.json` at the absolute root of the archive; PowerShell's `Compress-Archive` builds standard ZIPs in Windows terminal
+- Store data disclosures — in browser store policies, "data collection" strictly refers to transmitting data off-device, not reading DOM nodes in-memory
