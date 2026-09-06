@@ -64,3 +64,17 @@ Learned:
 - Git tracking vs `.gitignore` — adding files to `.gitignore` after they are committed does nothing; you have to run `git rm -r --cached` to purge them from the remote index
 - Extension packaging — store submission zips require `manifest.json` at the absolute root of the archive; PowerShell's `Compress-Archive` builds standard ZIPs in Windows terminal
 - Store data disclosures — in browser store policies, "data collection" strictly refers to transmitting data off-device, not reading DOM nodes in-memory
+
+
+
+## 2026-09-06 — Day 6
+
+Published both ContextFreeze and UI Dissect to the Microsoft Edge Add-ons Store, taking two extensions from local development to public production listings.
+
+Learned:
+- Cross-browser compatibility — Chromium extensions (Manifest V3) run on Microsoft Edge without modifying a single line of extension logic or manifest code
+- Store review economics — the Microsoft Edge Partner Center has no developer registration fee (unlike the Chrome Web Store's $5 fee), making it the fastest free path to a public 1-click store link
+- Reviewer certification notes — providing concise, reproduction-style testing steps in the submission notes prevents manual certification review flags and back-and-forth rejections
+- Store listing asset requirements — store storefronts require specific aspect ratios: 300×300 1:1 logos, 440×280 and 1400×560 promotional banners, and pixel-exact 1280×800 screenshots
+- Decoupling software releases from store reviews — developers have three tiers of distribution: cloning source (`npm run build`), downloading standalone `.zip` releases from GitHub Releases, or 1-click installs via official browser store channels
+- GitHub Pages as compliance infrastructure — serving a clean `docs/index.html` from the `main` branch provides an instant, free, zero-maintenance HTTPS privacy policy URL required by store reviewers
