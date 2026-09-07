@@ -92,3 +92,16 @@ Revised:
   - **C++**: using `std::max` / `std::min` with `INT_MAX` from `<climits>`; passing vectors by `const &` to avoid $O(n)$ copy overhead
   - **Java**: using `Math.max()` with primitive `int` arrays to prevent wrapper boxing/unboxing overhead
   - **Python3**: using `float('inf')` for initialization and idiomatic single-loop traversal (`for price in prices:`) without index lookups
+
+## 2026-09-07 — Day 7 (Part 2: Distinct Subsequences DP)
+
+Solved the Distinct Subsequences problem in C++, analyzing string matching states, recurrence transitions, and memory compression.
+
+Learned:
+- DP state definition — `dp[i][j]` represents the number of distinct subsequences of string `s[0...i-1]` that match target `t[0...j-1]`
+- Recurrence transitions:
+  - If `s[i-1] == t[j-1]`: `dp[i][j] = dp[i-1][j-1] + dp[i-1][j]` (summing the decision to match the current character with the decision to skip it to search for other matches)
+  - If `s[i-1] != t[j-1]`: `dp[i][j] = dp[i-1][j]` (must skip current character in `s`)
+- Base case semantics — `dp[i][0] = 1` for all `i`, because an empty target string can always be formed exactly once by deleting all remaining characters
+- Memory compression — reducing space from a 2D $O(m \times n)$ table to a 1D $O(n)$ array by iterating the inner loop backwards to avoid overwriting values needed for the current transition
+- Integer overflow handling — large test cases exceed standard 32-bit signed integers, requiring `unsigned long long` or modulo clamping in C++ to prevent undefined runtime behavior
