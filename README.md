@@ -78,3 +78,17 @@ Learned:
 - Store listing asset requirements — store storefronts require specific aspect ratios: 300×300 1:1 logos, 440×280 and 1400×560 promotional banners, and pixel-exact 1280×800 screenshots
 - Decoupling software releases from store reviews — developers have three tiers of distribution: cloning source (`npm run build`), downloading standalone `.zip` releases from GitHub Releases, or 1-click installs via official browser store channels
 - GitHub Pages as compliance infrastructure — serving a clean `docs/index.html` from the `main` branch provides an instant, free, zero-maintenance HTTPS privacy policy URL required by store reviewers
+
+
+
+## 2026-09-07 — Day 7 (Part 1: Kadane's Algorithm Across Languages)
+
+Implemented Best Time to Buy and Sell Stock and explored its relationship to Kadane’s Algorithm across C++, Java, and Python3.
+
+Revised:
+- The Kadane invariant — at each step, you decide whether to extend the current local tracking window or discard it and reset; tracking minimum buy price is effectively tracking the minimum prefix of the running price series
+- $O(n)$ time & $O(1)$ space optimization — replacing the naive $O(n^2)$ pairwise comparison with a single-pass greedy scan that updates `min_price` and `max_profit` simultaneously
+- Cross-language nuances:
+  - **C++**: using `std::max` / `std::min` with `INT_MAX` from `<climits>`; passing vectors by `const &` to avoid $O(n)$ copy overhead
+  - **Java**: using `Math.max()` with primitive `int` arrays to prevent wrapper boxing/unboxing overhead
+  - **Python3**: using `float('inf')` for initialization and idiomatic single-loop traversal (`for price in prices:`) without index lookups
