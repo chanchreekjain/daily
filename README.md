@@ -105,3 +105,17 @@ Learned:
 - Base case semantics — `dp[i][0] = 1` for all `i`, because an empty target string can always be formed exactly once by deleting all remaining characters
 - Memory compression — reducing space from a 2D $O(m \times n)$ table to a 1D $O(n)$ array by iterating the inner loop backwards to avoid overwriting values needed for the current transition
 - Integer overflow handling — large test cases exceed standard 32-bit signed integers, requiring `unsigned long long` or modulo clamping in C++ to prevent undefined runtime behavior
+
+
+
+
+## 2026-09-08 — Day 8
+
+Added the write path to jobtrail — a form that inserts into Postgres.
+
+Learned:
+- Repository pattern: SQL lives in `repo.ts`, pages just call functions
+- `"use server"` + `<form action={fn}>` — server actions, no API route needed
+- `${}` in SQL templates sends values as parameters, not text — that's what blocks SQL injection
+- `revalidatePath` refreshes cached data after a write
+- `turbopack.root` — Next.js was scanning my whole home folder and running out of memory
