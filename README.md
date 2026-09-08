@@ -119,3 +119,11 @@ Learned:
 - `${}` in SQL templates sends values as parameters, not text — that's what blocks SQL injection
 - `revalidatePath` refreshes cached data after a write
 - `turbopack.root` — Next.js was scanning my whole home folder and running out of memory
+
+
+## 2026-09-08 — Day 8 (DSA)
+
+Solved two problems.
+
+- **Longest substring without repeating characters** — sliding window with a set/map of seen characters; expand right, shrink left on a repeat.
+- **Commas in range** — worked through the range logic and formatting.
