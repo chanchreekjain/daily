@@ -139,3 +139,14 @@ Learned:
 - API keys live in `.env.local` locally and in Vercel's env vars for production, never in the repo
 - The folder path under `src/app/` is the URL — `app/jd/page.tsx` → `/jd`
 - `console.log` in a server action prints to the terminal, not the browser
+
+
+## 2026-09-09 — Day 9 (debugging)
+
+Production threw a 500 on the JD extraction while local worked fine.
+
+Learned:
+- Vercel runtime logs carry the actual exception; the browser only shows a generic error page
+- 503 UNAVAILABLE was the model being overloaded — someone else's problem, not a bug in my code
+- The same call took 8s, then 20s — the SDK retries internally, so slow can mean "retrying"
+- External API calls need retry with backoff and a readable error, not a white 500 page
