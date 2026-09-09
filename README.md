@@ -127,3 +127,15 @@ Solved two problems.
 
 - **Longest substring without repeating characters** — sliding window with a set/map of seen characters; expand right, shrink left on a repeat.
 - **Commas in range** — worked through the range logic and formatting.
+
+
+
+## 2026-09-09 — Day 9
+
+Added AI to jobtrail — paste a job description, get its requirements back as structured JSON.
+
+Learned:
+- `responseSchema` constrains the model's output shape — it can't return prose or skip a field
+- API keys live in `.env.local` locally and in Vercel's env vars for production, never in the repo
+- The folder path under `src/app/` is the URL — `app/jd/page.tsx` → `/jd`
+- `console.log` in a server action prints to the terminal, not the browser
