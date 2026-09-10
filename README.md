@@ -160,7 +160,7 @@ Learned:
 
 
 
-## 2026-09-10 — Day 10
+## 2026-09-10 — Day 10 
 
 Made the JD extraction survivable and visible.
 
