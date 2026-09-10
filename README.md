@@ -169,3 +169,8 @@ Learned:
 - Return errors as data instead of throwing; a thrown error is a white 500 page
 - `"use client"` marks the browser/server boundary — only client components hold state
 - `useActionState` gives you the action's return value plus an `isPending` flag for the loading state
+
+
+## 2026-09-10 — Day 10 (DSA)
+
+- **Minimum Window Substring** (LeetCode 76, Hard) — solved in C++, Java and Python3. Sliding window with a need/have count map; expand right until the window is valid, then shrink left while it stays valid, tracking the smallest.
