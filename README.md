@@ -156,3 +156,16 @@ Learned:
 
 - **Longest Repeating Character Replacement** (LeetCode 424) — solved in C++, Java and Python3.
 - **Count Commas in Range II**
+
+
+
+
+## 2026-09-10 — Day 10
+
+Made the JD extraction survivable and visible.
+
+Learned:
+- Retry with exponential backoff, but only on transient statuses (503, 429) — everything else rethrows
+- Return errors as data instead of throwing; a thrown error is a white 500 page
+- `"use client"` marks the browser/server boundary — only client components hold state
+- `useActionState` gives you the action's return value plus an `isPending` flag for the loading state
