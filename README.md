@@ -174,3 +174,7 @@ Learned:
 ## 2026-09-10 — Day 10 (DSA)
 
 - **Minimum Window Substring** (LeetCode 76, Hard) — solved in C++, Java and Python3. Sliding window with a need/have count map; expand right until the window is valid, then shrink left while it stays valid, tracking the smallest.
+
+
+
+2026-09-12 — Day 11 (Weekend Edition)Kept things light today because even compilers deserve a day off. Just a couple of DSA brain-teasers to keep the streak alive while officially being on weekend mode.Learned:Min Stack — Solved in C++, Java, and Python3. How do you get the minimum value in $O(1)$ time without scanning the whole array? By keeping a parallel universe. You either use a secondary stack or store pairs of (value, current_minimum). Every element pushed to the stack basically carries a snapshot of history with it.Maximum Score of Non-overlapping Intervals — Solved in C++. This is the algorithmic equivalent of schedule FOMO. You sort intervals by their end times, then use dynamic programming paired with binary search (std::upper_bound in C++) to constantly ask: "If I commit to this time block, what's the absolute maximum value I can still salvage from the non-overlapping past?"
