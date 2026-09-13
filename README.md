@@ -177,7 +177,7 @@ Learned:
 
 
 
-## 2026-09-13 — Day 11 (Weekend)
+## 2026-09-12 — Day 11 (Weekend)
 
 Kept things light today because even compilers deserve a day off. Just a couple of DSA problems to keep the streak alive without burning out.
 
