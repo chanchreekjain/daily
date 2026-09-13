@@ -177,7 +177,20 @@ Learned:
 
 
 
-## 2026-09-12 — Day 11 (Weekend)
+## 2026-09-11 — Day 11
+
+Released version 0.2.0 of UI Dissect to the Microsoft Edge Add-ons store, introducing a "Live Edit" tab and real-time WCAG contrast readouts without requesting any new manifest permissions.
+
+Learned:
+- `element.style.setProperty` for Live Editing — writing temporary inline CSS properties (background, border, font-size, shadow) directly to the frozen element allows for immediate, cosmetic sandbox tweaking.
+- In-memory volatility as a security feature — style mutations are kept strictly local to the user's rendered page. They are never persisted to storage, transmitted over the network, or written back to the host site, meaning everything cleanly resets on page reload.
+- Real-time accessibility checks — hooking the color controls to a contrast calculator enables the panel to instantly update the contrast ratio and WCAG AA/AAA compliance badges as the user drags the pickers.
+- Reactive code generation — applying inline styles dynamically feeds back into the code generator, allowing the CSS, Tailwind, and React export tabs to reflect the live edits immediately (while also fixing two bugs from the 0.1.0 generator).
+- Privacy policy mapping — even when a feature (like Live Edit) runs entirely offline without telemetry or remote code execution, store policies require the privacy policy to explicitly state that the temporary changes are local and never transmitted.
+
+
+
+## 2026-09-12 — Day 12 (Weekend)
 
 Kept things light today because even compilers deserve a day off. Just a couple of DSA problems to keep the streak alive without burning out.
 
