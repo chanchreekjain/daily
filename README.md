@@ -197,3 +197,13 @@ Kept things light today because even compilers deserve a day off. Just a couple 
 Learned:
 - **Min Stack** — solved in C++, Java, and Python3. Achieved O(1) minimum retrieval by keeping a parallel universe of minimums. Every time an element is pushed to the stack, it either goes onto a secondary stack or gets stored as a `(value, current_minimum)` pair, carrying a snapshot of history with it.
 - **Maximum Score of Non-overlapping Intervals** — solved in C++. The algorithmic equivalent of schedule FOMO. Sorted the intervals by their end times, then used dynamic programming paired with binary search (`std::upper_bound` in C++) to constantly ask: "If I commit to this time block, what's the absolute maximum value I can still salvage from the non-overlapping past?"
+
+
+
+## 2026-09-13 — Day 13 (Weekend)
+
+Still rolling with the weekend LeetCode routine. Postfix notation and 2D matrix translations to keep the brain engaged before Monday.
+
+Learned:
+- **Evaluate Reverse Polish Notation** (C++, Java, Python3) — A classic stack workout where parentheses don't exist and order of operations is peacefully resolved. Numbers get pushed; operators pop the last two, evaluate, and push the result back. The real test is navigating cross-language quirks for string conversion and division: C++'s `std::stoi()`, Java's `Integer.parseInt()`, and Python's integer division handling for negative numbers (using `int(a / b)` to truncate toward zero instead of the standard `a // b` floor division).
+- **Image Overlap** (C++) — Matrix manipulation that quickly turns into 2D vector math. Instead of physically simulating sliding one matrix over the other in a massive nested loop, you can just extract the 2D coordinates of all the `1`s in both images. By calculating the translation vector `(x_A - x_B, y_A - y_B)` between every pair of `1`s and counting their frequencies in a map, the most frequent translation vector instantly gives you the maximum possible overlap.
