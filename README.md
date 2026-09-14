@@ -207,3 +207,13 @@ Still rolling with the weekend LeetCode routine. Postfix notation and 2D matrix 
 Learned:
 - **Evaluate Reverse Polish Notation** (C++, Java, Python3) — A classic stack workout where parentheses don't exist and order of operations is peacefully resolved. Numbers get pushed; operators pop the last two, evaluate, and push the result back. The real test is navigating cross-language quirks for string conversion and division: C++'s `std::stoi()`, Java's `Integer.parseInt()`, and Python's integer division handling for negative numbers (using `int(a / b)` to truncate toward zero instead of the standard `a // b` floor division).
 - **Image Overlap** (C++) — Matrix manipulation that quickly turns into 2D vector math. Instead of physically simulating sliding one matrix over the other in a massive nested loop, you can just extract the 2D coordinates of all the `1`s in both images. By calculating the translation vector `(x_A - x_B, y_A - y_B)` between every pair of `1`s and counting their frequencies in a map, the most frequent translation vector instantly gives you the maximum possible overlap.
+
+
+
+## 2026-09-14 — Day 14 (Ganesh Chaturthi Extended Cut)
+
+The compiler got an extra day off for Ganesh Chaturthi, but the DSA grind never sleeps. Fueled by festive modaks, I tackled some backtracking and 2D collision physics to cap off the long weekend.
+
+Learned:
+- **Generate Parentheses** (C++, Java, Python3) — Welcome to the backtracking multiverse. The golden rule of the bracket club: you can only close `)` what you've already opened `(`. It’s pure state-space tree exploration. The real meta-game was handling the memory states across languages: exploiting C++'s pass-by-value branching, babysitting Java’s `StringBuilder` (append, recurse, delete!), and just letting Python glue immutable strings together like it’s magic.
+- **Rectangle Overlap** (C++) — Basically building the collision detection for a primitive 2D game engine. The coolest trick here is "negative logic." Instead of doing heavy math to find the exact intersection zone, you just aggressively prove that the rectangles *missed* each other. If Box A is entirely to the left, right, above, or below Box B—they pass right through each other as ghosts. It turns a messy geometry problem into a razor-sharp, 4-condition $O(1)$ vibe check.
