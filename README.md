@@ -217,3 +217,16 @@ The compiler got an extra day off for Ganesh Chaturthi, but the DSA grind never 
 Learned:
 - **Generate Parentheses** (C++, Java, Python3) — Welcome to the backtracking multiverse. The golden rule of the bracket club: you can only close `)` what you've already opened `(`. It’s pure state-space tree exploration. The real meta-game was handling the memory states across languages: exploiting C++'s pass-by-value branching, babysitting Java’s `StringBuilder` (append, recurse, delete!), and just letting Python glue immutable strings together like it’s magic.
 - **Rectangle Overlap** (C++) — Basically building the collision detection for a primitive 2D game engine. The coolest trick here is "negative logic." Instead of doing heavy math to find the exact intersection zone, you just aggressively prove that the rectangles *missed* each other. If Box A is entirely to the left, right, above, or below Box B—they pass right through each other as ghosts. It turns a messy geometry problem into a razor-sharp, 4-condition $O(1)$ vibe check.
+
+
+
+
+## 2026-09-16 — Day 15
+
+Added a navbar to jobtrail.
+
+Learned:
+- `Link` does client-side navigation; `<a>` throws the whole page away and reloads
+- The root layout wraps every page, so shared UI is written once
+- `$_` in a double-quoted string gets eaten by bash before the other program sees it
+- Turbopack's "memory allocation failed" was my laptop being full, not a code bug — 8 GB total, 280 MB free
