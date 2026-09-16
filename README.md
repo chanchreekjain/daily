@@ -230,3 +230,11 @@ Learned:
 - The root layout wraps every page, so shared UI is written once
 - `$_` in a double-quoted string gets eaten by bash before the other program sees it
 - Turbopack's "memory allocation failed" was my laptop being full, not a code bug — 8 GB total, 280 MB free
+
+## 2026-09-16 — Day 15(DSA)
+
+Back to the weekday rhythm. Traded the weekend collision physics for time-traveling arrays and some seriously heavy state-machine dynamic programming. 
+
+Learned:
+- **Daily Temperatures** (C++, Java, Python3) — The quintessential "Monotonic Stack" initiation. Instead of looping forward like a rookie to find the next warm day, you stack up the indices of unresolved cold days. The moment a hot day arrives, it acts like a thermal trigger, popping all the colder days off the stack and resolving their wait times in one shot. It's essentially $O(N)$ time-traveling weather prediction.
+- **Number of Sets of K Non-Overlapping Line Segments** (C++) — A dynamic programming boss fight. You have a line of points and need to draw `k` segments. Instead of brute-forcing boundary combinations, you build a 3D state machine: at any given point, are you currently *drawing* a segment, or *waiting* to start a new one? It turns a chaotic, overlapping geometry nightmare into a clean `dp[index][k][is_drawing]` table, proving once again that state machines can untangle any logic puzzle.
