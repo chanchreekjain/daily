@@ -248,3 +248,17 @@ Mid-week grind. Swapped out 2D geometry for some sliding window DP and a literal
 Learned:
 - **Car Fleet** (C++, Java, Python3) — Traffic jam physics modeled with arrays. Instead of simulating the cars moving frame-by-frame, you calculate each car's theoretical time to reach the destination and sort them by starting position. Working backward from the finish line, if a car is mathematically destined to arrive faster than the one ahead of it, it rear-ends it and forms a fleet bottlenecked by the slower speed. You basically just count the unbothered pace cars.
 - **Find Two Non-overlapping Sub-arrays Each With Target Sum** (C++) — A sliding window that requires a rearview mirror. Finding one valid sub-array is easy, but finding two that don't overlap while minimizing their combined length is tricky. The galaxy-brain move is maintaining a `best_length_so_far` array. When your sliding window hits the target sum, you check your historical array for the best non-overlapping complement to your left. It turns a nested loop nightmare into a clean $O(N)$ sweep.
+
+
+
+
+## 2026-09-18 — Day 16
+
+jobtrail now saves extractions to Postgres and reuses them.
+
+Learned:
+- Foreign keys + `on delete cascade` — the database enforces consistency, not my code
+- `returning id` hands back the row Postgres just created
+- Hashing the input makes a reliable dedupe key; same JD twice costs one query, not one API call
+- Migrations are written in the repo but run against the database separately
+- "Insufficient system resources" from Turbopack means the laptop is full, not the code
