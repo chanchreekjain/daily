@@ -238,3 +238,13 @@ Back to the weekday rhythm. Traded the weekend collision physics for time-travel
 Learned:
 - **Daily Temperatures** (C++, Java, Python3) — The quintessential "Monotonic Stack" initiation. Instead of looping forward like a rookie to find the next warm day, you stack up the indices of unresolved cold days. The moment a hot day arrives, it acts like a thermal trigger, popping all the colder days off the stack and resolving their wait times in one shot. It's essentially $O(N)$ time-traveling weather prediction.
 - **Number of Sets of K Non-Overlapping Line Segments** (C++) — A dynamic programming boss fight. You have a line of points and need to draw `k` segments. Instead of brute-forcing boundary combinations, you build a 3D state machine: at any given point, are you currently *drawing* a segment, or *waiting* to start a new one? It turns a chaotic, overlapping geometry nightmare into a clean `dp[index][k][is_drawing]` table, proving once again that state machines can untangle any logic puzzle.
+
+
+
+## 2026-09-17 — Day 16(DSA)
+
+Mid-week grind. Swapped out 2D geometry for some sliding window DP and a literal traffic jam simulation.
+
+Learned:
+- **Car Fleet** (C++, Java, Python3) — Traffic jam physics modeled with arrays. Instead of simulating the cars moving frame-by-frame, you calculate each car's theoretical time to reach the destination and sort them by starting position. Working backward from the finish line, if a car is mathematically destined to arrive faster than the one ahead of it, it rear-ends it and forms a fleet bottlenecked by the slower speed. You basically just count the unbothered pace cars.
+- **Find Two Non-overlapping Sub-arrays Each With Target Sum** (C++) — A sliding window that requires a rearview mirror. Finding one valid sub-array is easy, but finding two that don't overlap while minimizing their combined length is tricky. The galaxy-brain move is maintaining a `best_length_so_far` array. When your sliding window hits the target sum, you check your historical array for the best non-overlapping complement to your left. It turns a nested loop nightmare into a clean $O(N)$ sweep.
