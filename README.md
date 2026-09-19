@@ -263,7 +263,7 @@ Learned:
 - Migrations are written in the repo but run against the database separately
 - "Insufficient system resources" from Turbopack means the laptop is full, not the code
 
-## 2026-09-18 — Day 17(DSA)
+## 2026-09-19 — Day 18(DSA)
 
 Rounding out the week by revisiting the absolute fundamentals and adding another hitbox collision algorithm to the imaginary 2D game engine.
 
