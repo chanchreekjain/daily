@@ -263,6 +263,8 @@ Learned:
 - Migrations are written in the repo but run against the database separately
 - "Insufficient system resources" from Turbopack means the laptop is full, not the code
 
+
+
 ## 2026-09-19 — Day 18(DSA)
 
 Rounding out the week by revisiting the absolute fundamentals and adding another hitbox collision algorithm to the imaginary 2D game engine.
@@ -270,3 +272,16 @@ Rounding out the week by revisiting the absolute fundamentals and adding another
 Learned:
 - **Binary Search** (C++, Java, Python3) — The undisputed king of $O(\log N)$. It’s the classic "guess a number" game scaled up to millions. The real takeaway is building the muscle memory to write `mid = left + (right - left) / 2` to dodge the notorious integer overflow trap in C++ and Java, while Python just shrugs and dynamically handles massive integers behind the scenes.
 - **Circle and Rectangle Overlapping** (C++) — Pure computational geometry elegance. Instead of writing a massive conditional tree or doing messy trigonometric edge-intersections, it’s a masterclass in clamping. You just use `std::clamp` to artificially snap the circle's center coordinates to the closest boundary of the rectangle. If the squared distance from that clamped point back to the real center is less than or equal to the radius squared, you've got a collision. Clean, mathematical, and strictly $O(1)$.
+
+
+
+
+## 2026-09-20 — Day 19
+
+Added a Saved JDs page to jobtrail, backed by a join query.
+
+Learned:
+- `left join` keeps rows with no match; a plain join silently drops them
+- `group by` + `count(r.id)` collapses many rows into one — counting the joined column, not `*`
+- `count` comes back as a string in JS unless you cast it with `::int`
+- Planned the next phase: history vs pipeline, a table view, export, resume upload, match score
