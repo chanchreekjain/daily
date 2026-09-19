@@ -252,7 +252,7 @@ Learned:
 
 
 
-## 2026-09-18 — Day 16
+## 2026-09-18 — Day 17
 
 jobtrail now saves extractions to Postgres and reuses them.
 
@@ -262,3 +262,11 @@ Learned:
 - Hashing the input makes a reliable dedupe key; same JD twice costs one query, not one API call
 - Migrations are written in the repo but run against the database separately
 - "Insufficient system resources" from Turbopack means the laptop is full, not the code
+
+## 2026-09-18 — Day 17(DSA)
+
+Rounding out the week by revisiting the absolute fundamentals and adding another hitbox collision algorithm to the imaginary 2D game engine.
+
+Learned:
+- **Binary Search** (C++, Java, Python3) — The undisputed king of $O(\log N)$. It’s the classic "guess a number" game scaled up to millions. The real takeaway is building the muscle memory to write `mid = left + (right - left) / 2` to dodge the notorious integer overflow trap in C++ and Java, while Python just shrugs and dynamically handles massive integers behind the scenes.
+- **Circle and Rectangle Overlapping** (C++) — Pure computational geometry elegance. Instead of writing a massive conditional tree or doing messy trigonometric edge-intersections, it’s a masterclass in clamping. You just use `std::clamp` to artificially snap the circle's center coordinates to the closest boundary of the rectangle. If the squared distance from that clamped point back to the real center is less than or equal to the radius squared, you've got a collision. Clean, mathematical, and strictly $O(1)$.
