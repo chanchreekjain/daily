@@ -285,3 +285,11 @@ Learned:
 - `group by` + `count(r.id)` collapses many rows into one — counting the joined column, not `*`
 - `count` comes back as a string in JS unless you cast it with `::int`
 - Planned the next phase: history vs pipeline, a table view, export, resume upload, match score
+
+## 2026-09-20 — Day 19 (DSA)
+
+Another weekend, another set of algorithms. Moved from finding numbers in flat arrays to hunting them down in grids, plus a brand-new string scoring problem.
+
+Learned:
+- **Search a 2D Matrix** (C++, Java, Python3) — The ultimate coordinate mapping illusion. It looks like a 2D grid, but because of its strict sorting rules, you can mathematically treat it as a continuous 1D array. By running a standard binary search from `0` to `m * n - 1`, you translate the 1D `mid` index back into 2D space on the fly using integer division and modulo: `matrix[mid / n][mid % n]`. It achieves $O(\log(m \times n))$ time and completely bypasses the need for nested loops.
+- **Reverse Degree of a String** (C++) — A quick string scoring puzzle (LeetCode 3498). Instead of building a hash map or an array to manually map 'a' to 26 down to 'z' to 1, you just use an ASCII math trick. The reverse alphabet value is instantly calculated with `26 - (char - 'a')`. Multiply that by its 1-based index in the string, keep a running sum, and you're done. A very clean, constant-space, single-pass sweep.
