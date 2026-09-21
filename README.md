@@ -293,3 +293,20 @@ Another weekend, another set of algorithms. Moved from finding numbers in flat a
 Learned:
 - **Search a 2D Matrix** (C++, Java, Python3) — The ultimate coordinate mapping illusion. It looks like a 2D grid, but because of its strict sorting rules, you can mathematically treat it as a continuous 1D array. By running a standard binary search from `0` to `m * n - 1`, you translate the 1D `mid` index back into 2D space on the fly using integer division and modulo: `matrix[mid / n][mid % n]`. It achieves $O(\log(m \times n))$ time and completely bypasses the need for nested loops.
 - **Reverse Degree of a String** (C++) — A quick string scoring puzzle (LeetCode 3498). Instead of building a hash map or an array to manually map 'a' to 26 down to 'z' to 1, you just use an ASCII math trick. The reverse alphabet value is instantly calculated with `26 - (char - 'a')`. Multiply that by its 1-based index in the string, keep a running sum, and you're done. A very clean, constant-space, single-pass sweep.
+
+## 2026-09-21 — Day 20
+
+Added company research to jobtrail: web search + AI summary, cached and rationed.
+
+Learned:
+- Check the pricing page before picking an API — "free" features aren't always on the free tier
+- Share a cache when the answer is the same for everyone; ration per user when it isn't free
+- `jsonb` — a column that holds a whole JSON object, for data you display but never filter on
+- `on conflict ... do update` — insert, or overwrite if the row already exists (an "upsert")
+- Don't let the AI write links: number the sources, let it cite numbers, map them to URLs in code
+- A schema checks the shape of an AI answer, not whether it's true — validate the substance too
+- A `catch` that hides the error hides the cause — log the real message
+- 503 = the provider is overloaded, not your bug: retry with backoff, then fall back to another model
+- Only charge the user after the work succeeds
+- `pg_trgm` — fuzzy name matching; suggest ("did you mean…?") instead of silently guessing
+- `git status` compares against git's memory of GitHub, not GitHub itself — `git pull` before you push
