@@ -334,3 +334,11 @@ Learned:
 - Let the AI judge, let code do the maths — the score is arithmetic on a checklist, so it's explainable
 - A model only knows what you send it: the degree was marked missing because education wasn't in the prompt
 - A fallback that gives a misleading number can be worse than an honest "try again later"
+
+## 2026-09-22 — Day 21(DSA)
+
+Hitting day 20 by twisting binary search logic into knots and cranking yesterday's array puzzle up to its fully optimized form.
+
+Learned:
+- **Find Minimum in Rotated Sorted Array** (C++, Java, Python3) — Binary search, but you're hunting for a cliff instead of a target. The entire logic hinges on comparing your `mid` pointer to the `right` boundary. If `nums[mid] > nums[right]`, you know the inflection point (the minimum) is hiding somewhere to the right. Otherwise, you're either on the cliff or to the right of it, so you pull the right boundary in. It systematically crushes the search space down to a single element in $O(\log N)$ time, entirely bypassing the need for a linear scan.
+- **Find X Value of Array II** (C++) — The sequel to yesterday's threshold puzzle, but this time $O(N \log N)$ sorting won't cut it. To hit that flawless $O(N)$ time complexity, you have to ditch the sorting algorithm and break out bucket sort logic or frequency arrays. By counting occurrences and sweeping backward with a prefix sum, you can dynamically track how many elements meet the criteria in a single linear pass. It's the classic competitive programming trade-off: burn a little extra memory for a massive speed multiplier.
