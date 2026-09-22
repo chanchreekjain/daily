@@ -311,6 +311,14 @@ Learned:
 - `pg_trgm` — fuzzy name matching; suggest ("did you mean…?") instead of silently guessing
 - `git status` compares against git's memory of GitHub, not GitHub itself — `git pull` before you push
 
+## 2026-09-21 — Day 20(DSA)
+
+Starting the new week strong. Traded in the 2D collision physics for some primate gastronomy and solid array threshold hunting.
+
+Learned:
+- **Koko Eating Bananas** (C++, Java, Python3) — The absolute poster child for "Binary Search on Answer." Instead of simulating Koko eating hour by hour like a brute-force rookie, you realize her optimal eating speed `k` has to live somewhere between `1` and the size of the largest pile. You binary search that entire speed range. The real flex here is dodging floating-point inaccuracies in C++ and Java by using ceiling integer math `(pile + speed - 1) / speed` to calculate the hours needed, while Python just lets you comfortably use `math.ceil()`. Turns a seemingly impossible simulation into a razor-sharp $O(N \log M)$ execution.
+- **Find X Value of Array I** (C++) — A great exercise in frequency mapping and threshold validation. The naive approach is a nested loop checking every possible `X` against every element, which tanks your time complexity. The galaxy-brain move is either sorting the array first to leverage index-based logic or using a hash map to tally frequencies. Once organized, you can sweep through and validate the "X" condition in a single pass, turning an $O(N^2)$ headache into a clean $O(N)$ or $O(N \log N)$ victory.
+
 ## 2026-09-22 — Day 21
 
 jobtrail got settings, job details, CSV export, resume upload and a match score.
