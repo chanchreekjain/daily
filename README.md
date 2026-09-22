@@ -310,3 +310,19 @@ Learned:
 - Only charge the user after the work succeeds
 - `pg_trgm` — fuzzy name matching; suggest ("did you mean…?") instead of silently guessing
 - `git status` compares against git's memory of GitHub, not GitHub itself — `git pull` before you push
+
+## 2026-09-22 — Day 21
+
+jobtrail got settings, job details, CSV export, resume upload and a match score.
+
+Learned:
+- Route handlers — a URL that returns a file (CSV) instead of a page; use `<a>`, not `<Link>`, to download it
+- CSV escaping: quote values with commas, double inner quotes, and prefix `=` `+` `-` `@` so Excel can't run a formula
+- Postgres `check` constraints — the database itself refuses values outside a fixed list
+- A client component can't import a file that imports the database — split display helpers from SQL
+- Cookies for per-device settings (theme) so the first paint is already the right colours
+- Don't store what you don't need: the resume PDF goes to the AI and is never saved, only what's extracted
+- Check a file's first bytes (`%PDF-`), not its name — names and browser-reported types are just labels
+- Let the AI judge, let code do the maths — the score is arithmetic on a checklist, so it's explainable
+- A model only knows what you send it: the degree was marked missing because education wasn't in the prompt
+- A fallback that gives a misleading number can be worse than an honest "try again later"
