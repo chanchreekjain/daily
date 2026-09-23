@@ -342,3 +342,13 @@ Hitting day 20 by twisting binary search logic into knots and cranking yesterday
 Learned:
 - **Find Minimum in Rotated Sorted Array** (C++, Java, Python3) — Binary search, but you're hunting for a cliff instead of a target. The entire logic hinges on comparing your `mid` pointer to the `right` boundary. If `nums[mid] > nums[right]`, you know the inflection point (the minimum) is hiding somewhere to the right. Otherwise, you're either on the cliff or to the right of it, so you pull the right boundary in. It systematically crushes the search space down to a single element in $O(\log N)$ time, entirely bypassing the need for a linear scan.
 - **Find X Value of Array II** (C++) — The sequel to yesterday's threshold puzzle, but this time $O(N \log N)$ sorting won't cut it. To hit that flawless $O(N)$ time complexity, you have to ditch the sorting algorithm and break out bucket sort logic or frequency arrays. By counting occurrences and sweeping backward with a prefix sum, you can dynamically track how many elements meet the criteria in a single linear pass. It's the classic competitive programming trade-off: burn a little extra memory for a massive speed multiplier.
+
+
+
+## 2026-09-23 — Day 22(DSA)
+
+Leveling up the rotated array saga and turning array deletions into a sliding window heist.
+
+Learned:
+- **Search in Rotated Sorted Array** (C++, Java, Python3) — The boss fight of yesterday's problem. You're not just finding the cliff; you have to navigate around it to snipe a target. The secret is figuring out which half of your `mid` split is strictly sorted. Once you lock onto the sorted half, you just check if your target falls in that predictable range. If it does, you dive in. If not, you jump the cliff to the other side. Pure $O(\log N)$ logic.
+- **Minimum Operations to Reduce X to Zero** (C++) — An absolute masterclass in perspective shifts. Trying to chop numbers off the left and right ends to exactly hit `X` is a branching recursion nightmare. The galaxy-brain move is inverting the problem: instead of finding the *shortest* edges that sum to `X`, you use a sliding window to find the *longest* continuous middle subarray that sums to `Total_Sum - X`. Suddenly, a chaotic two-pointer edge problem becomes a buttery-smooth $O(N)$ sweep.
