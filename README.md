@@ -352,3 +352,17 @@ Leveling up the rotated array saga and turning array deletions into a sliding wi
 Learned:
 - **Search in Rotated Sorted Array** (C++, Java, Python3) — The boss fight of yesterday's problem. You're not just finding the cliff; you have to navigate around it to snipe a target. The secret is figuring out which half of your `mid` split is strictly sorted. Once you lock onto the sorted half, you just check if your target falls in that predictable range. If it does, you dive in. If not, you jump the cliff to the other side. Pure $O(\log N)$ logic.
 - **Minimum Operations to Reduce X to Zero** (C++) — An absolute masterclass in perspective shifts. Trying to chop numbers off the left and right ends to exactly hit `X` is a branching recursion nightmare. The galaxy-brain move is inverting the problem: instead of finding the *shortest* edges that sum to `X`, you use a sliding window to find the *longest* continuous middle subarray that sums to `Total_Sum - X`. Suddenly, a chaotic two-pointer edge problem becomes a buttery-smooth $O(N)$ sweep.
+
+
+
+## 2026-09-24 — Day 23
+
+Integrated a complete local backend tech stack with Spring Boot, Docker, PostgreSQL, Redis, and RabbitMQ, and successfully pushed the codebase to Bitbucket.
+
+Learned:
+- Environment PATH syncing — how VS Code terminals cache environment variables and how to reload them via PowerShell session variables
+- Port conflict resolution — mapping the local Spring Boot application to port `8081` to run alongside Jenkins on port `8080`
+- Java/Maven toolchain alignment — reconciling runtime JDK versions with `pom.xml` configurations to resolve compiler mismatches
+- Spring Boot properties configuration — wiring up PostgreSQL, Redis, and RabbitMQ connection strings in `application.properties`
+- REST controller implementation — building a basic `@RestController` (`TestController`) to verify end-to-end container health and connectivity
+- Git workflow management — staging, committing, and pushing a newly generated Spring project structure to a remote Bitbucket repository
