@@ -366,3 +366,23 @@ Learned:
 - Spring Boot properties configuration — wiring up PostgreSQL, Redis, and RabbitMQ connection strings in `application.properties`
 - REST controller implementation — building a basic `@RestController` (`TestController`) to verify end-to-end container health and connectivity
 - Git workflow management — staging, committing, and pushing a newly generated Spring project structure to a remote Bitbucket repository
+
+
+
+## 2026-09-25 — Day 24(DSA)
+
+Crushing the end of the week with a classic LeetCode Hard boss fight and a string parsing puzzle that feels like building a mini grammar engine.
+
+Learned:
+- **Median of Two Sorted Arrays** (C++, Java, Python3) — The holy grail of binary search partitioning. Instead of merging two giant arrays like a brute-force rookie (which tanks you to $O(M + N)$), you partition both arrays simultaneously. By ensuring the left half elements are all smaller than the right half, you find the median by looking at the boundary max/mins. It brings a terrifying merge down to a lightning-fast $O(\log(\min(M, N)))$.
+- **Brace Expansion II** (C++) — A syntax parser masquerading as a string problem. When you have nested curly braces with comma-separated options like `{a,b}{c,{d,e}}`, a simple loop explodes. The solution is treating it like a mini-compiler: using recursion or stack-based expansion to evaluate products of sets, merging lists, and deduplicating everything into a cleanly sorted alphabetical output. It turns a chaotic combination matrix into structured order.
+
+
+
+## 2026-09-26 — Day 25(DSA)
+
+Wrapping up the week with some string parsing acrobatics and the absolute rite of passage for every pointer-wielding developer.
+
+Learned:
+- **Evaluate Bracket Pairs of a String** (C++) — A clean string-scanning and lookup puzzle. By loading the knowledge base into an `unordered_map` for $O(1)$ access, you stream through the string looking for opening parentheses `(`, capture the key inside, and swap it with its matching value (or a default `?` if it's missing). It turns a messy bracket-substitution task into a smooth, single-pass translation.
+- **Reverse Linked List** (C++, Java, Python3) — The timeless pointer ballet. Whether you're managing raw memory addresses in C++, handling object references in Java, or sliding names across nodes in Python, the core three-pointer dance (`prev`, `curr`, `next`) remains undefeated. You systematically flip the arrows one by one in $O(N)$ time and $O(1)$ space without ever losing your place in the chain.
