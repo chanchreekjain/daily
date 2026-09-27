@@ -386,3 +386,13 @@ Wrapping up the week with some string parsing acrobatics and the absolute rite o
 Learned:
 - **Evaluate Bracket Pairs of a String** (C++) — A clean string-scanning and lookup puzzle. By loading the knowledge base into an `unordered_map` for $O(1)$ access, you stream through the string looking for opening parentheses `(`, capture the key inside, and swap it with its matching value (or a default `?` if it's missing). It turns a messy bracket-substitution task into a smooth, single-pass translation.
 - **Reverse Linked List** (C++, Java, Python3) — The timeless pointer ballet. Whether you're managing raw memory addresses in C++, handling object references in Java, or sliding names across nodes in Python, the core three-pointer dance (`prev`, `curr`, `next`) remains undefeated. You systematically flip the arrows one by one in $O(N)$ time and $O(1)$ space without ever losing your place in the chain.
+
+
+
+## 2026-09-27 — Day 26(DSA)
+
+Wrapping up the weekend with some nested string acrobatics and the classic linked-list merge. Pointers and stacks working overtime.
+
+Learned:
+- **Reverse Substrings Between Each Pair of Parentheses** (C++) — A stack-powered string-flipping puzzle. When you hit a closing parenthesis `)`, you pop characters off the stack until you find the matching opening parenthesis `(`, reverse that chunk, and push it back in. It handles nested brackets effortlessly by treating each parenthesis level as its own local stack frame, turning a chaotic string reversal into an elegant $O(N)$ operation.
+- **Merge Two Sorted Lists** (C++, Java, Python3) — The foundational linked-list rite of passage. Instead of wrestling with edge cases for the head pointer, you pull out the ultimate cheat code: a dummy node. From there, it's just a clean two-pointer race, stitching the smaller node onto your chain until one list runs out, then instantly appending the remainder in $O(N + M)$ time and $O(1)$ extra space.
