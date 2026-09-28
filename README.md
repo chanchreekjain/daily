@@ -396,3 +396,13 @@ Wrapping up the weekend with some nested string acrobatics and the classic linke
 Learned:
 - **Reverse Substrings Between Each Pair of Parentheses** (C++) — A stack-powered string-flipping puzzle. When you hit a closing parenthesis `)`, you pop characters off the stack until you find the matching opening parenthesis `(`, reverse that chunk, and push it back in. It handles nested brackets effortlessly by treating each parenthesis level as its own local stack frame, turning a chaotic string reversal into an elegant $O(N)$ operation.
 - **Merge Two Sorted Lists** (C++, Java, Python3) — The foundational linked-list rite of passage. Instead of wrestling with edge cases for the head pointer, you pull out the ultimate cheat code: a dummy node. From there, it's just a clean two-pointer race, stitching the smaller node onto your chain until one list runs out, then instantly appending the remainder in $O(N + M)$ time and $O(1)$ extra space.
+
+
+
+## 2026-09-28 — Day 27(DSA)
+
+Starting the new week with some bracket-depth tracking and the ultimate pointer racetrack.
+
+Learned:
+- **Maximum Nesting Depth of the Parentheses** (C++) — A lightweight string-scanning puzzle that doesn't even need a heavy stack. Since you only care about depth, you just maintain a running counter: increment when you see `(`, decrement when you see `)`, and track the peak value along the way. It turns a nested bracket problem into a clean, single-pass $O(N)$ sweep with $O(1)$ space.
+- **Linked List Cycle** (C++, Java, Python3) — The classic Floyd's Tortoise and Hare algorithm. Instead of wasting memory with a hash set to track visited nodes, you unleash two pointers—a slow one walking step-by-step and a fast one sprinting two steps at a time. If there's a loop, the fast pointer laps the slow one and they inevitably crash into each other. Pure $O(N)$ time and $O(1)$ space elegance.
