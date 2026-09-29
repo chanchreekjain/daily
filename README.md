@@ -406,3 +406,13 @@ Starting the new week with some bracket-depth tracking and the ultimate pointer 
 Learned:
 - **Maximum Nesting Depth of the Parentheses** (C++) — A lightweight string-scanning puzzle that doesn't even need a heavy stack. Since you only care about depth, you just maintain a running counter: increment when you see `(`, decrement when you see `)`, and track the peak value along the way. It turns a nested bracket problem into a clean, single-pass $O(N)$ sweep with $O(1)$ space.
 - **Linked List Cycle** (C++, Java, Python3) — The classic Floyd's Tortoise and Hare algorithm. Instead of wasting memory with a hash set to track visited nodes, you unleash two pointers—a slow one walking step-by-step and a fast one sprinting two steps at a time. If there's a loop, the fast pointer laps the slow one and they inevitably crash into each other. Pure $O(N)$ time and $O(1)$ space elegance.
+
+
+
+## 2026-09-29 — Day 28
+
+Stepping up the pointer detective work and navigating some treacherous grid-based bracket mazes. 
+
+Learned:
+- **Linked List Cycle II** (C++, Java, Python3) — Finding the exact crime scene where the infinite loop begins. After using Floyd's Tortoise and Hare (fast and slow pointers) to prove a cycle exists, you trigger phase two: reset one pointer back to the head and march both at the exact same speed. Mathematically, where they collide *again* is precisely the node where the cycle starts. Pure $O(N)$ time and $O(1)$ space magic.
+- **Check if There Is a Valid Parentheses String Path** (C++) — Grid navigation meets bracket validation. Every cell you step on either opens `(` or closes `)` a parenthesis, and your running balance can *never* drop below zero. To solve it, you deploy 2D Dynamic Programming or Memoized DFS, tracking both your coordinates `(r, c)` and your current bracket balance. It turns a chaotic maze into a state-tracking grid sweep.
