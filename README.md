@@ -416,3 +416,13 @@ Stepping up the pointer detective work and navigating some treacherous grid-base
 Learned:
 - **Linked List Cycle II** (C++, Java, Python3) — Finding the exact crime scene where the infinite loop begins. After using Floyd's Tortoise and Hare (fast and slow pointers) to prove a cycle exists, you trigger phase two: reset one pointer back to the head and march both at the exact same speed. Mathematically, where they collide *again* is precisely the node where the cycle starts. Pure $O(N)$ time and $O(1)$ space magic.
 - **Check if There Is a Valid Parentheses String Path** (C++) — Grid navigation meets bracket validation. Every cell you step on either opens `(` or closes `)` a parenthesis, and your running balance can *never* drop below zero. To solve it, you deploy 2D Dynamic Programming or Memoized DFS, tracking both your coordinates `(r, c)` and your current bracket balance. It turns a chaotic maze into a state-tracking grid sweep.
+
+
+
+## 2026-09-30 — Day 29
+
+Mid-week check-in. Balancing bracket-splitting choreography with some high-precision pointer surgery from the end of the line.
+
+Learned:
+- **Maximum Nesting Depth of Two Valid Parentheses Strings** (C++) — A clever parity-based bracket splitting puzzle. When you need to divide a single valid parentheses string into two separate valid strings while keeping their maximum nesting depths as low as possible, you realize you don't need complex dp. You just assign brackets based on their depth parity (e.g., even depths go to team A, odd depths go to team B). It cleanly balances the load and flattens the nested chaos in a single $O(N)$ pass.
+- **Remove Nth Node From End of List** (C++, Java, Python3) — The classic gap-pointer technique. Since singly linked lists only let you walk forward, deleting the $N$-th node from the tail usually feels like a trap. The fix is setting up a two-pointer relay: advance a "fast" pointer $n$ steps ahead of a "slow" pointer, then march them together until the fast one hits the end. The slow pointer lands right before the victim, allowing you to bypass it in $O(N)$ time and a single pass.
