@@ -429,7 +429,14 @@ Learned:
 
 
 
-## 2026-10-01 — Day 30
+## 2026-10-01 — Day 30(DSA)
 
 Learned:
 - **Valid Parentheses** (C++) — Really?? 🫪
+
+
+
+# 2026-10-02 — Day 31(DSA)
+
+Learned:
+- **Generate Parentheses** (C++) — You gotta up your game LC 😮‍💨
