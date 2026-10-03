@@ -440,3 +440,10 @@ Learned:
 
 Learned:
 - **Generate Parentheses** (C++) — You gotta up your game LC 😮‍💨
+
+
+
+## 2026-10-03 — Day 32(DSA)
+
+Learned:
+- **Longest Valid Parentheses** (C++) — Woops, my bad!
