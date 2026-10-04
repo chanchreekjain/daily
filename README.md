@@ -447,3 +447,10 @@ Learned:
 
 Learned:
 - **Longest Valid Parentheses** (C++) — Woops, my bad!
+
+
+
+## 2026-10-04 — Day 33(DSA)
+
+Learned:
+- **Valid Parenthesis String** (C++) — This was fun.
