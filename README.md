@@ -454,3 +454,10 @@ Learned:
 
 Learned:
 - **Valid Parenthesis String** (C++) — This was fun.
+
+
+
+## 2026-10-05 — Day 34(DSA)
+
+Learned:
+- **Score of Parentheses** (C++) — I see a theme :')
