@@ -461,3 +461,12 @@ Learned:
 
 Learned:
 - **Score of Parentheses** (C++) — I see a theme :')
+
+
+
+## 2026-10-06 — Day 35(DSA)
+
+Learned:
+- **Minimum Add to Make Parentheses Valid** —
+<img width="854" height="480" alt="Oh, shut up, Skeleton Man!" src="https://github.com/user-attachments/assets/9d8dafe2-1b1e-4475-af1b-031cb5d1226c" />
+
