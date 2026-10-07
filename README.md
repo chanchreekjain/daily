@@ -470,3 +470,10 @@ Learned:
 - **Minimum Add to Make Parentheses Valid** —
 <img width="854" height="480" alt="Oh, shut up, Skeleton Man!" src="https://github.com/user-attachments/assets/9d8dafe2-1b1e-4475-af1b-031cb5d1226c" />
 
+
+
+## 2026-10-07 — Day 36(DSA)
+
+Learned:
+- **Remove Invalid Parentheses** —
+<img width="320" height="261" alt="NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" src="https://github.com/user-attachments/assets/24188897-5e89-4dd2-a92e-3501ffd7fdf5" />
