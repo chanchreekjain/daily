@@ -480,7 +480,7 @@ Learned:
 
 
 
-## 2026-10-07 — Day 36(DSA)
+## 2026-10-08 — Day 37(DSA)
 
 Learned:
 - **Remove Outermost Parentheses** —
