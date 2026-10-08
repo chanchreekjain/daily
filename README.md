@@ -477,3 +477,11 @@ Learned:
 Learned:
 - **Remove Invalid Parentheses** —
 <img width="320" height="261" alt="NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!" src="https://github.com/user-attachments/assets/24188897-5e89-4dd2-a92e-3501ffd7fdf5" />
+
+
+
+## 2026-10-07 — Day 36(DSA)
+
+Learned:
+- **Remove Outermost Parentheses** —
+- <img width="220" height="123" alt="there's no god" src="https://github.com/user-attachments/assets/f4ead68a-5018-441b-8e08-d7909f8fc69e" />
