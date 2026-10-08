@@ -484,4 +484,4 @@ Learned:
 
 Learned:
 - **Remove Outermost Parentheses** —
-- <img width="220" height="123" alt="there's no god" src="https://github.com/user-attachments/assets/f4ead68a-5018-441b-8e08-d7909f8fc69e" />
+<img width="220" height="123" alt="there's no god" src="https://github.com/user-attachments/assets/f4ead68a-5018-441b-8e08-d7909f8fc69e" />
