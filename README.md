@@ -485,3 +485,11 @@ Learned:
 Learned:
 - **Remove Outermost Parentheses** —
 <img width="220" height="123" alt="there's no god" src="https://github.com/user-attachments/assets/f4ead68a-5018-441b-8e08-d7909f8fc69e" />
+
+
+
+## 2026-10-09 — Day 38(DSA)
+
+Learned:
+- **Minimum Insertions to Balance a Parentheses String** —
+<img width="350" height="198" alt="Sad Doctor CJ" src="https://github.com/user-attachments/assets/bbc109e6-5333-4c70-aee4-7c0282773305" />
