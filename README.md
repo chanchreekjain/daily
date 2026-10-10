@@ -493,3 +493,10 @@ Learned:
 Learned:
 - **Minimum Insertions to Balance a Parentheses String** —
 <img width="350" height="198" alt="Sad Doctor CJ" src="https://github.com/user-attachments/assets/bbc109e6-5333-4c70-aee4-7c0282773305" />
+
+
+
+## 2026-10-10 — Day 39(DSA)
+
+Learned:
+- **Minimum Sum of Squared Differences** — THERE IS A GOD!
