@@ -500,3 +500,10 @@ Learned:
 
 Learned:
 - **Minimum Sum of Squared Differences** — THERE IS A GOD!
+
+
+
+## 2026-10-11 — Day 40(DSA)
+
+Learned:
+- **Sum of Squares of Special Elements** — :)
