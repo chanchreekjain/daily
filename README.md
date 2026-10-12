@@ -507,3 +507,10 @@ Learned:
 
 Learned:
 - **Sum of Squares of Special Elements** — :)
+
+
+
+## 2026-10-12 — Day 41(DSA)
+
+Learned:
+- **Apply Operations on Array to Maximize Sum of Squares** — Are squares the new parentheses?
