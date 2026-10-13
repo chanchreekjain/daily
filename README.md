@@ -514,3 +514,10 @@ Learned:
 
 Learned:
 - **Apply Operations on Array to Maximize Sum of Squares** — Are squares the new parentheses?
+
+
+
+## 2026-10-13 — Day 42(DSA)
+
+Learned:
+- **Maximum Alternating Sum of Squares** — 🤨
