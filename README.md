@@ -521,3 +521,4 @@ Learned:
 
 Learned:
 - **Maximum Alternating Sum of Squares** — 🤨
+(github why you no show my entry dude)
