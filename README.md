@@ -521,4 +521,10 @@ Learned:
 
 Learned:
 - **Maximum Alternating Sum of Squares** — 🤨
-(github why you no show my entry dude)
+
+
+
+## 2026-10-13 — Day 42(DSA)
+
+Learned:
+- **Maximize Sum of Squares of Digits** — IT CANNOT BE HAPPENING AGAIN
