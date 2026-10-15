@@ -528,3 +528,10 @@ Learned:
 
 Learned:
 - **Maximize Sum of Squares of Digits** — IT CANNOT BE HAPPENING AGAIN
+
+
+
+## 2026-10-15 — Day 44(DSA)
+
+Learned:
+- **Subarrays Distinct Element Sum of Squares I** — don't do it please
