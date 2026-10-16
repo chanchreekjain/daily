@@ -535,3 +535,10 @@ Learned:
 
 Learned:
 - **Subarrays Distinct Element Sum of Squares I** — don't do it please
+
+
+
+## 2026-10-16 — Day 45(DSA)
+
+Learned:
+- **Subarrays Distinct Element Sum of Squares II** — honestly? predictable
