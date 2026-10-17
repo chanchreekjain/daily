@@ -542,3 +542,10 @@ Learned:
 
 Learned:
 - **Subarrays Distinct Element Sum of Squares II** — honestly? predictable
+
+
+
+## 2026-10-17 — Day 46(DSA)
+
+Learned:
+- **Minimum Swaps to Sort by Digit Sum** — switchin' it up
