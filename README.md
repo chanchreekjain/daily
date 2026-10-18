@@ -549,3 +549,10 @@ Learned:
 
 Learned:
 - **Minimum Swaps to Sort by Digit Sum** — switchin' it up
+
+
+
+## 2026-10-18 — Day 47(DSA)
+
+Learned:
+- **Number of Ways to Reorder Array to Get Same BST** — whoooop dial it back
