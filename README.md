@@ -556,3 +556,10 @@ Learned:
 
 Learned:
 - **Number of Ways to Reorder Array to Get Same BST** — whoooop dial it back
+
+
+
+## 2026-10-19 — Day 48(DSA)
+
+Learned:
+- **Find Target Indices After Sorting Array** — bed of roses
