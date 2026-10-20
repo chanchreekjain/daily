@@ -563,3 +563,10 @@ Learned:
 
 Learned:
 - **Find Target Indices After Sorting Array** — bed of roses
+
+
+
+## 2026-10-20 — Day 49(DSA)
+
+Learned:
+- **Sum of Sortable Integers** — pillow of thorns
