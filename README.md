@@ -570,3 +570,10 @@ Learned:
 
 Learned:
 - **Sum of Sortable Integers** — pillow of thorns
+
+
+
+## 2026-10-21 — Day 50(DSA)
+
+Learned:
+- **Minimum Operations to Sort a String** — what am i trying to hide
