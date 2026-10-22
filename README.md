@@ -577,3 +577,10 @@ Learned:
 
 Learned:
 - **Minimum Operations to Sort a String** — what am i trying to hide
+
+
+
+## 2026-10-22 — Day 51(DSA)
+
+Learned:
+- **Minimum Operations to Sort a Permutation** — low effort update
