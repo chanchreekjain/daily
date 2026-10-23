@@ -584,3 +584,10 @@ Learned:
 
 Learned:
 - **Minimum Operations to Sort a Permutation** — low effort update
+
+
+
+## 2026-10-23 — Day 52(DSA)
+
+Learned:
+- **Maximum K to Sort a Permutation** — izz mah convocation tmrw!
