@@ -591,3 +591,10 @@ Learned:
 
 Learned:
 - **Maximum K to Sort a Permutation** — izz mah convocation tmrw!
+
+
+
+## 2026-10-24 — Day 53(DSA)
+
+Learned:
+- **Count Days Spent Together** — i'm an engineer?!
