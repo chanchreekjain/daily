@@ -598,3 +598,10 @@ Learned:
 
 Learned:
 - **Count Days Spent Together** — i'm an engineer?!
+
+
+
+## 2026-10-25 — Day 54(DSA)
+
+Learned:
+- **Number of CLosed Islands** — 🏝️
