@@ -605,3 +605,11 @@ Learned:
 
 Learned:
 - **Number of CLosed Islands** — 🏝️
+
+
+
+## 2026-10-25 — Day 54(DSA)
+
+Learned:
+- **Count Islands With Total Value Divisible by K** — 🏝️v2
+
