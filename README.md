@@ -620,3 +620,10 @@ Learned:
 Learned:
 - **Create Grid With Exactly One Path** —
 <img width="473" height="356" alt="1/14000605" src="https://github.com/user-attachments/assets/a3bd4637-e8f8-4030-9be0-f697e23acdd6" />
+
+
+
+## 2026-10-28 — Day 57(DSA)
+
+Learned:
+- **Minimum XOR Path in a Grid** — 🛣️
