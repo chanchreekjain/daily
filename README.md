@@ -627,3 +627,10 @@ Learned:
 
 Learned:
 - **Minimum XOR Path in a Grid** — 🛣️
+
+
+
+## 2026-10-29 — Day 58(DSA)
+
+Learned:
+- **Palindromic Path Queries in a Tree** — 🌳
