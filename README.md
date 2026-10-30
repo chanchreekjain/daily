@@ -634,3 +634,10 @@ Learned:
 
 Learned:
 - **Palindromic Path Queries in a Tree** — 🌳
+
+
+
+## 2026-10-30 — Day 59(DSA)
+
+Learned:
+- **Shortest Path With At Most K Consecutive Identical** — 🩳🛣️
