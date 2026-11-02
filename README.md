@@ -655,3 +655,10 @@ Learned:
 
 Learned:
 - **Minimum Moves to Equal Array Elements** — it's da first of da month🐮
+
+
+
+## 2026-11-02 — Day 62(DSA)
+
+Learned:
+- **Minimum Moves to Equal Array Elements II** — one-two-cha-cha-cha
