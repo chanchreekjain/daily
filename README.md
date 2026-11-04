@@ -669,3 +669,10 @@ Learned:
 
 Learned:
 - **Minimum Moves to Equal Array Elements III** — one-two-three...one-two-three
+
+
+
+## 2026-11-04 — Day 64(DSA)
+
+Learned:
+- **Minimum Operations to Make Elements Within K Subarray** — AAAAAAAAAAAAAAAAAAaa
