@@ -676,3 +676,10 @@ Learned:
 
 Learned:
 - **Minimum Operations to Make Elements Within K Subarray** — AAAAAAAAAAAAAAAAAAaa
+
+
+
+## 2026-11-05 — Day 65(DSA)
+
+Learned:
+- **Find the Distance Value Between Two Arrays** — oooooooooooooooo
