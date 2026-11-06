@@ -683,3 +683,10 @@ Learned:
 
 Learned:
 - **Find the Distance Value Between Two Arrays** — oooooooooooooooo
+
+
+
+## 2026-11-06 — Day 66(DSA)
+
+Learned:
+- **Count Zero Request Servers** — 000000000
